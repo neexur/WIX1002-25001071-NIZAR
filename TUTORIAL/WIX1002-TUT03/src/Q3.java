@@ -8,15 +8,6 @@
  * @author Abah
  */
 public class Q3 {
-    /* OUTPUT:
-    a: *****
-       $$$$$
-    b: #####
-       $$$$$
-    c: #####
-    d: -----
-    */
-    
     // Question a) correction
     public static void main(String[] args) {
         int x = 9, y = 10;
@@ -28,4 +19,12 @@ public class Q3 {
         System.out.println("#####");
         System.out.println("$$$$$");
     }
+    /* OUTPUT:
+    a: *****
+       $$$$$
+    b: #####
+       $$$$$
+    c: #####
+    d: -----
+    */
 }
