@@ -1,5 +1,10 @@
 # WIX1002 - Fundamentals of Programming
 
+![Java](https://shields.io)
+![NetBeans](https://shields.io)
+![Git](https://shields.io)
+![GitHub](https://shields.io)
+
 Official coursework repository for Tutorials, Labs and Tasks :)
 
 ## Sudent Information:
@@ -21,3 +26,4 @@ Official coursework repository for Tutorials, Labs and Tasks :)
    ┣ 📂 WIX1002-TUT02
    ┗ 📂 ....
 ```
+
