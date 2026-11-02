@@ -38,14 +38,14 @@ public class Q1 {
         System.out.println("d) Enter number: ");
         int num = in.nextInt();
         int sum = 0;
-        for (int i=1; i<=num; i++) {
-            sum += i;
-        }
+        for (int i=1; i<=num; i++) sum += i;
         System.out.println(sum);
         
         //e 
+        double summ = 0.0;
         for (int i=1; i<=25; i++) {
-            
+            summ += (double) i/(26-i);
         }
+        System.out.printf("e) Sum = %.2f%n", summ);
     }
 }
