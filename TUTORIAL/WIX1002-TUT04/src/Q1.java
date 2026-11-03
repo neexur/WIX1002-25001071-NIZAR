@@ -33,7 +33,7 @@ public class Q1 {
             System.out.println();
         }
         
-        //d 
+        //d
         Scanner in = new Scanner(System.in);
         System.out.print("d) Enter number: ");
         int num = in.nextInt(), sum = 0;
@@ -42,9 +42,7 @@ public class Q1 {
         
         //e 
         double summ = 0;
-        for (int i=1; i<=25; i++) {
-            summ += (double) i/(26-i);
-        }
+        for (int i=1; i<=25; i++) summ += (double) i/(26-i);
         System.out.printf("e) Sum = %.2f%n", summ);
     }
 }
