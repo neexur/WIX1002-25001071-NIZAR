@@ -54,5 +54,26 @@ public class Q4 {
             }
             System.out.println();
         }
+        
+        currentDay = 1;
+        offsetDays = daysBeforeAugust%7;
+        
+        System.out.println("AUGUST");
+        
+        for (int i=0; i<7; i++) System.out.print(dotw.charAt(i) + "\t");
+        System.out.println();
+        
+        for (int w=0; w<5; w++) {
+            for (int d=0; d<7; d++) {
+                if (offsetDays == 0) {
+                    if (currentDay < remainingDays) System.out.print(currentDay + "\t");
+                    currentDay++;
+                } else {
+                    System.out.print("\t");
+                    offsetDays--;
+                }
+            }
+            System.out.println();
+        }
     }
 }
