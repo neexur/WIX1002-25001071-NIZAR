@@ -38,10 +38,10 @@ public class Q1 {
         System.out.print("d) Enter number: ");
         int num = in.nextInt(), sum = 0;
         for (int i=1; i<=num; i++) sum += i;
-        System.out.println("Sum of numbers from 1 = " + sum);
+        System.out.println("Sum of numbers from 1 to " + num + " = " + sum);
         
         //e 
-        double summ = 0.0;
+        double summ = 0;
         for (int i=1; i<=25; i++) {
             summ += (double) i/(26-i);
         }
