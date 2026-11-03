@@ -15,24 +15,11 @@ public class Q5 {
         
         Random r = new Random();
         
-        while (p1 <= 100 && p2 <= 100) {
+        while (p1 > 100 || p2 > 100) {
             if (counter%2 == 0) currentPlayer = 1;
-            else currentPlayer = 2;
-            
             int roll = r.nextInt(7);
-            while (true) {
-                if (roll == 6) {
-                    System.out.println("Player " + currentPlayer + " roll: " + roll + " (total=" + p2);
-                } else {
-                    System.out.println("Player " + currentPlayer + " roll: " + roll + " (total=" + p2);
-                    break;
-                }
-            }
             
-            counter++;
+            
         }
-        
-        if (p1 > 100) System.out.println("Player 1 wins");
-        else System.out.println("Player 2 wins");
     }
 }
