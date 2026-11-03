@@ -14,7 +14,7 @@ public class Q3 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int counter = 0;
-        double minimum = -Double.MAX_VALUE, maximum = Double.MAX_VALUE, sum = 0, sumSquared = 0, sd = 0, average = 0; 
+        double minimum = Double.MAX_VALUE, maximum = -Double.MAX_VALUE, sum = 0, sumSquared = 0, sd = 0, average = 0; 
         
         while (true) {
             System.out.print("Enter a score [negative score to quit]: ");
