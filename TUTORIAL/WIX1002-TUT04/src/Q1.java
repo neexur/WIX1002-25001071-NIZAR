@@ -35,11 +35,10 @@ public class Q1 {
         
         //d 
         Scanner in = new Scanner(System.in);
-        System.out.println("d) Enter number: ");
-        int num = in.nextInt();
-        int sum = 0;
+        System.out.print("d) Enter number: ");
+        int num = in.nextInt(), sum = 0;
         for (int i=1; i<=num; i++) sum += i;
-        System.out.println(sum);
+        System.out.println("Sum of numbers from 1 = " + sum);
         
         //e 
         double summ = 0.0;
