@@ -37,7 +37,7 @@ public class Q4 {
         
         String dotw = "SMTWTFS";
         
-        System.out.println("MAY");
+        System.out.println("\nMAY");
         
         for (int i=0; i<7; i++) System.out.print(dotw.charAt(i) + "\t");
         System.out.println();
@@ -58,7 +58,7 @@ public class Q4 {
         currentDay = 1;
         offsetDays = daysBeforeAugust%7;
         
-        System.out.println("AUGUST");
+        System.out.println("\nAUGUST");
         
         for (int i=0; i<7; i++) System.out.print(dotw.charAt(i) + "\t");
         System.out.println();
