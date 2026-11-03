@@ -14,12 +14,19 @@ public class Q5 {
         int p1 = 0, p2 = 0, currentPlayer = 1, counter = 0;
         
         Random r = new Random();
+        int roll;
         
-        while (p1 > 100 || p2 > 100) {
-            if (counter%2 == 0) currentPlayer = 1;
-            int roll = r.nextInt(7);
+        while (p1 < 100 && p2 < 100) {
+            do {
+            roll = r.nextInt(6)+1;
+            if (counter%2 == 0) p1 += roll;
+            else p2 += roll;
             
+            System.out.println("Player " + (counter%2+1) + " rolls " + roll);
+            System.out.println(p1 + " | " + p2);
             
+            } while (roll == 6);
+            counter++;
         }
     }
 }
