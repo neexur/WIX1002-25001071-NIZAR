@@ -19,7 +19,7 @@ public class Q4 {
         
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                rmatrix[2-j][i] = matrix[i][j];
+                rmatrix[i][j] = matrix[2-j][i];
             }
         }
         
