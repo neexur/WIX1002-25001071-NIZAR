@@ -21,11 +21,18 @@ public class Q5 {
         }
         System.out.println();
         
-        Arrays.sort(arr);
+        for (int i = 0; i < 20; i++) {
+            for (int j = i+1; j < 20; j++) {
+                int temp = arr[i];
+                if (arr[i] < arr[j]) {
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        
         for (int i = 0; i < 20; i++) {
             System.out.print(arr[i] + (i == arr.length-1 ? "" : ", "));
         }
-        
-        
     }
 }
