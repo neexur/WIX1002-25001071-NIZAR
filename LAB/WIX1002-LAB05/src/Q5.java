@@ -50,7 +50,5 @@ public class Q5 {
         
         if (found) System.out.println(search + " Found \nLinear Search - " + i+1 + " Loops" );
         else System.out.println(search + " not found");
-        
-        
     }
 }
