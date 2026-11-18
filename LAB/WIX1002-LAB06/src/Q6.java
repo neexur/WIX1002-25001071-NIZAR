@@ -9,7 +9,7 @@
  *
  * @author Abah
  */
-import static java.lang.Integer.parseInt;
+
 public class Q6 {
     static boolean isPrime(int n) {
         if (n<=1) return false;
@@ -20,7 +20,7 @@ public class Q6 {
     static int reverse(int n) {
         String str = "", strN = "" + n;
         for (int i=strN.length()-1; i>=0; i--) str += strN.charAt(i);
-        return parseInt(str);
+        return Integer.parseInt(str);
     }
     
     static boolean isPalindromicPrime(int n) {
