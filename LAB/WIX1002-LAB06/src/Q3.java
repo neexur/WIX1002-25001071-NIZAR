@@ -20,9 +20,7 @@ public class Q3 {
         
         String result = "";
         
-        for (int i=arr.length-1; i>=0; i--) {
-            result += arr[i];
-        }
+        for (int i=arr.length-1; i>=0; i--) result += arr[i];
         
         System.out.println("Reversed array: " + result);
     }
