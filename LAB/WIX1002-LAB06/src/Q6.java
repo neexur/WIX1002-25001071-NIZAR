@@ -44,8 +44,8 @@ public class Q6 {
             number++;
         }
         
-        count = 0;
-        number = 1;
+        count = number = 0;
+        
         System.out.println("First 20 emirp: ");
         while (count < TOTAL_NUMBER) {
             if (isEmirp(number)) {
