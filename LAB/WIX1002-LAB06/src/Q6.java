@@ -18,9 +18,21 @@ public class Q6 {
     }
     
     static int reverse(int n) {
-        String str = "", strN = "" + n;
+        String str = "", strN = n + "";
         for (int i=strN.length()-1; i>=0; i--) str += strN.charAt(i);
         return Integer.parseInt(str);
+    }
+    
+    static int alsoReverse(int n) {
+        int r = 0;
+        
+        while (n>0) {
+            r *= 10;
+            r += n%10;
+            n /= 10;
+        }
+        
+        return r;
     }
     
     static boolean isPalindromicPrime(int n) {
@@ -32,24 +44,30 @@ public class Q6 {
     }
     
     public static void main(String[] args) {
+        System.out.println(alsoReverse(12345) + "");
+        
         final int TOTAL_NUMBER = 20;
         int count = 0, number = 1;
         
-        System.out.println("First 20 palindromic prime: ");
+        System.out.printf("First %d palindromic prime: %n", TOTAL_NUMBER);
         while (count < TOTAL_NUMBER) {
             if (isPalindromicPrime(number)) {
-                System.out.println(count+1 + ") " + number);
+                System.out.print(number + "\t");
+                if((count+1)%10==0) System.out.println();
                 count++;
             }
             number++;
         }
         
+        System.out.println();
+        
         count = number = 0;
         
-        System.out.println("First 20 emirp: ");
+        System.out.printf("First %d emirp: %n", TOTAL_NUMBER);
         while (count < TOTAL_NUMBER) {
             if (isEmirp(number)) {
-                System.out.println(count+1 + ") " + number);
+                System.out.print(number + "\t");
+                if((count+1)%10==0) System.out.println();
                 count++;
             }
             number++;
