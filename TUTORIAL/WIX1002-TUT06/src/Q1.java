@@ -40,10 +40,10 @@ public class Q1 {
         int nfactorial = 1;
         int kfactorial = 1;
         int nmkfactorial = 1;
-        
+                
         for (int i=1; i<=n; i++) nfactorial *= i;
-        for (int j=1; j<=n; j++) kfactorial *= j;
-        for (int nm=1; nm<=n; nm++) nmkfactorial *= nm;
+        for (int j=1; j<=k; j++) kfactorial *= j;
+        for (int nm=1; nm<=(n-k); nm++) nmkfactorial *= nm;
         
         return (nfactorial/(kfactorial*nmkfactorial));
     }
