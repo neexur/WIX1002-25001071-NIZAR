@@ -8,11 +8,10 @@
  * @author Abah
  */
 public class Q1 {
-    public static void main(String[] args) {
-        int num = 20;
-        
-        System.out.printf("Triangle number for %d is %d%n", num, triangleNumber(num));
-    }
+    public static void main(String[] args) { 
+        for (int i=1; i<=20; i++)
+            System.out.printf("%d) %d%n", i, triangleNumber(i));
+}
     
     static int triangleNumber(int n) {
         int result = 0;
@@ -20,5 +19,9 @@ public class Q1 {
         for (int i=1; i<=n; i++) result += i;
         
         return result;
+    }
+    
+    static int otherApproach(int n) {
+        return n*(n+1)/2;
     }
 }
